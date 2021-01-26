@@ -1,11 +1,13 @@
-import styled from 'styled-components'
+/* eslint-disable func-names */
+import React from 'react';
+import styled from 'styled-components';
+import { useRouter } from 'next/router';
 import db from '../db.json';
-import Widget from '../src/components/Widget'
-import QuizLogo from '../src/components/QuizLogo'
-import QuizBackground from '../src/components/QuizBackground'
-import Footer from '../src/components/Footer'
-import GitHubCorner from '../src/components/GitHubCorner'
-import Head from '../src/components/Head'
+import Widget from '../src/components/Widget';
+import QuizLogo from '../src/components/QuizLogo';
+import QuizBackground from '../src/components/QuizBackground';
+import Footer from '../src/components/Footer';
+import GitHubCorner from '../src/components/GitHubCorner';
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -19,9 +21,11 @@ export const QuizContainer = styled.div`
 `;
 
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = React.useState('');
+
   return (
     <>
-    <Head/>
       <QuizBackground backgroundImage={db.bg}>
         <QuizContainer>
           <QuizLogo />
@@ -31,6 +35,23 @@ export default function Home() {
             </Widget.Header>
             <Widget.Content>
               <p>{db.description}</p>
+              <form onSubmit={function (infosDoEvento) {
+                infosDoEvento.preventDefault();
+                router.push(`/quiz?name=${name}`);
+              }}
+              >
+                <input
+                  onChange={function (infosDoEvento) {
+                    setName(infosDoEvento.target.value);
+                  }}
+                  placeholder="Diz aqui seu nome"
+                  type="text"
+                />
+                <button type="submit" disabled={name.length === 0}>
+                  {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
+                  Vamos Jogar {name}
+                </button>
+              </form>
             </Widget.Content>
           </Widget>
 
