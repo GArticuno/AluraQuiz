@@ -8,6 +8,8 @@ import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
+import Input from '../src/components/Input';
+import Button from '../src/components/Button';
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -40,17 +42,16 @@ export default function Home() {
                 router.push(`/quiz?name=${name}`);
               }}
               >
-                <input
-                  onChange={function (infosDoEvento) {
-                    setName(infosDoEvento.target.value);
-                  }}
+                <Input
+                  name="nomeDoUsuario"
+                  onChange={(infosDoEvento) => setName(infosDoEvento.target.value)}
                   placeholder="Diz aqui seu nome"
-                  type="text"
+                  value={name}
                 />
-                <button type="submit" disabled={name.length === 0}>
+                <Button type="submit" disabled={name.length === 0}>
                   {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
                   Vamos Jogar {name}
-                </button>
+                </Button>
               </form>
             </Widget.Content>
           </Widget>

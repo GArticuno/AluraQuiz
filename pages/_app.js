@@ -25,32 +25,6 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
   }
-  button{
-    width:17.7rem;
-    height:3rem;
-    margin-top:15px;
-    border-radius:5px;
-    color: ${({ theme }) => theme.colors.contrastText};
-    background-color: ${({ theme }) => theme.colors.primary};
-    font-size:16px;
-    border: none;
-    outline: none; 
-  }
-  input{
-    width:17.7rem;
-    height:2.2rem;
-    font-size:14px;
-    padding-left:15px;
-    border-radius:5px;
-    color: ${({ theme }) => theme.colors.contrastText};
-    background-color: ${({ theme }) => theme.colors.secondary};
-    border:none;
-    outline: none; 
-  }
-  ::placeholder {
-    color: ${({ theme }) => theme.colors.contrastText};
-    opacity:0.7;
-  }
 `;
 
 const { theme } = db;

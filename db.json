@@ -4,25 +4,99 @@
   "description": "Teste os seus conhecimentos sobre pokemon para ter certeza se você é um treinador ou só um fã tóxico.",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
+      "image": "https://media2.giphy.com/media/zkMri4yiJ3Mdy/giphy.gif?cid=ecf05e47h4cmohmrjomro9sw530luvj8v3w0ozjgn7lnwf4w&rid=giphy.gif",
+      "title": "Qual é o mascote da franquia?",
       "description": "Essa é pra aquecer",
-      "answer": 2,
+      "answer": 0,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Pikachu",
+        "Charizard",
+        "Greninja",
+        "Bulbassaur"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "image": "https://media4.giphy.com/media/ebk7OXeNSeboQ/giphy.gif?cid=ecf05e47mpyv33zkc75qgfxnrf63tdh9kx317qw3ylqin2zs&rid=giphy.gif",
+      "title": "Qual desses não é um inicial?",
+      "description": "Ah um espião entre nós",
+      "answer": 3,
+      "alternatives": [
+         "Eevee",
+         "Charmander",
+         "Grookey",
+         "Starly"
+      ]
+    },
+    {
+      "image": "https://media1.giphy.com/media/3o7WTwtEgkjYLzKgTe/giphy.gif?cid=ecf05e47oyzwdu5qhj7uevibrg4ed1xngoe4kc02k6upjvof&rid=giphy.gif",
+      "title": "Qual desses pokemons é do tipo água?",
+      "description": "Dica: O pokemon faz glub glub",
+      "answer": 2,
+      "alternatives": [
+         "Delphox",
+         "Impidimp",
+         "Laturn",
+         "Flareon"
+      ]
+    },
+    {
+      "image": "https://media1.giphy.com/media/S4mv3vJ4iFjvq/giphy.gif?cid=ecf05e47cmvs8u3f95efbv2dck6ex4ag2svnvm1nabrerka7&rid=giphy.gif",
+      "title": "Qual desses pokemons não possue mega evolução?",
+      "description": "Mais uma que merecia mega",
+      "answer": 1,
+      "alternatives": [
+         "Aggron",
+         "Flygon",
+         "Gengar",
+         "Beedrill"
+      ]
+    },
+    {
+      "image": "https://64.media.tumblr.com/0fe1c588de54213d444ad47040a1c822/a5a7220f76bc28f9-22/s1280x1920/8183d086029fca95c41885c9dd6f2106a458d076.gifv",
+      "title": "Qual desses pokemons não é do tipo inseto?",
+      "description": "Disguise",
+      "answer": 2,
+      "alternatives": [
+         "Crustle",
+         "Butterfree",
+         "Drapion",
+         "Araquanid"
+      ]
+    },
+    {
+      "image": "https://64.media.tumblr.com/57265f4053b795206d25888ed536fb08/931967c70e8342f0-8b/s540x810/8c8f2eebf2b34353c85aed67328b60878d3fe4d0.gifv",
+      "title": "Qual desses pokemons não possue Gigantamax?",
+      "description": "Mecânica quebrada",
+      "answer": 1,
+      "alternatives": [
+         "Grimmsnarl",
+         "Garbodor",
+         "Dreadnaw",
+         "Raichu"
+      ]
+    },
+    {
+      "image": "https://64.media.tumblr.com/5f98f5828f2abedc16bbba2d1833e622/6e81909c346379bd-09/s540x810/c27a707b44c38683cbc6dec2ec152f1116ac9510.gifv",
+      "title": "Qual desses pokemons não tem a tipagem Psiquico/Fada?",
+      "description": "Muito poder competitivo",
       "answer": 0,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+         "Alcremie",
+         "Tapu-lele",
+         "Gardevoir",
+         "Rapidash"
+      ]
+    },
+    {
+      "image": "https://media.tenor.com/images/e928ea5627dcaa9296fdfa8d5d49640b/tenor.gif",
+      "title": "Qual desses é único em sua tipagem?",
+      "description": "A mais conpetitiva",
+      "answer": 3,
+      "alternatives": [
+         "Articuno",
+         "Hydreigon",
+         "Mr. Mime",
+         "Diggersby"
       ]
     }
   ],
