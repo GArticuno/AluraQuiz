@@ -101,7 +101,9 @@
     }
   ],
   "external": [
-    ""
+    "https://aluraquiz-coffee.leonardot07.vercel.app/",
+    "https://aluraquiz-base.alura-challenges.vercel.app/",
+    "https://alura-quiz-delta.vercel.app/"
   ],
   "theme": {
     "colors": {
