@@ -92,7 +92,12 @@ export default function Home() {
                   .replace('https:', '')
                   .replace('.vercel.app', '')
                   .split('.');
-
+                let h = {};
+                if (name.length === 0) {
+                  h = { pointerEvents: 'none', backgroundColor: '#8f8f8f' };
+                } else {
+                  h = { pointerEvents: 'auto' };
+                }
                 return (
                   <li
                     key={linkExterno}
@@ -100,6 +105,7 @@ export default function Home() {
                     <Widget.Topic
                       as={Link}
                       href={`/quiz/${projectName}___${githubUser}`}
+                      style={h}
                     >
                       {`${githubUser}/${projectName}`}
                     </Widget.Topic>
