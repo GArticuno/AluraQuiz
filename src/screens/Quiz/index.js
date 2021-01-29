@@ -30,7 +30,8 @@ function ResultWidget({ results, totalQuestions }) {
         </p>
         <ul>
           {results.map((result, index) => (
-            <li key={`result__${result}`}>
+            // eslint-disable-next-line react/no-array-index-key
+            <li key={`result__${index}`}>
               #
               {index + 1}
               {' '}
